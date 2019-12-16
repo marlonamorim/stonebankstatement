@@ -1,0 +1,16 @@
+version: '3.4'
+
+networks:
+  b8oneblogiwebapi-dev:
+    driver: bridge 
+
+services:
+  b8oneblogiwebapi:
+    image: bankstatementapi:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+        - "8000:80"
+    networks:
+      - b8oneblogiwebapi-dev

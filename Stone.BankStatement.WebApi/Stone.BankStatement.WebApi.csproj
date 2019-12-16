@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Stone.BankStatement.Domain\Stone.BankStatement.Domain.csproj" />
+    <ProjectReference Include="..\Stone.BankStatement.Repository\Stone.BankStatement.Repository.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0-rc4" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.6.0" />
+  </ItemGroup>
+
+</Project>
